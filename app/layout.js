@@ -1,0 +1,37 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "BuffRadar - Free Live Sports & Movie Stream Guide",
+  description: "Find where to watch live world cup and premium movies officially for free using a VPN.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className="bg-slate-950 font-sans antialiased text-white">
+        {/* ব্র্যান্ড নেভিগেশন বার */}
+        <nav className="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-50 px-6 py-4">
+          <div className="max-w-5xl mx-auto flex justify-between items-center">
+            <span className="text-xl font-black tracking-wider text-teal-400">
+              BUFF<span className="text-white">RADAR</span>
+            </span>
+            <div className="flex gap-4 text-xs font-bold text-slate-400">
+              <span className="text-teal-400">● LIVE WORLD CUP</span>
+            </div>
+          </div>
+        </nav>
+
+        {/* মূল পেজের কন্টেন্ট */}
+        {children}
+
+        {/* ব্র্যান্ড ফুটার */}
+        <footer className="border-t border-slate-900 bg-slate-950 py-8 text-center text-xs text-slate-600 mt-20">
+          <p>© 2026 BuffRadar. All Rights Reserved.</p>
+          <p className="mt-2 max-w-md mx-auto px-4 text-[10px]">
+            Disclaimer: BuffRadar only links to official, legal, and free-to-air broadcasting services. We do not host any pirated streams.
+          </p>
+        </footer>
+      </body>
+    </html>
+  );
+}
