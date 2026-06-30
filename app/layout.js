@@ -1,8 +1,11 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "BuffRadar - Free Live Sports & Movie Stream Guide",
-  description: "Find where to watch live world cup and premium movies officially for free using a VPN.",
+  title: "BuffRadar - Free Live Sports & Movie Stream",
+  description: "Find where to watch live world cup and",
+  other:{
+    "impact-site-verification": "<meta name='impact-site-verification' value='e03bc84d-92c6-473d-aedd-4b530ef16798'>"
+  }
 };
 
 export default function RootLayout({ children }) {
