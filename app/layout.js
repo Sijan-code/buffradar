@@ -2,9 +2,9 @@ import "./globals.css";
 
 export const metadata = {
   title: "BuffRadar - Free Live Sports & Movie Stream",
-  description: "Find where to watch live world cup and",
+  description: "Find where to watch live world cup and matches online free",
   other:{
-    "impact-site-verification": "<meta name='impact-site-verification' value='e03bc84d-92c6-473d-aedd-4b530ef16798'>"
+    "impact-site-verification": "6e9bd102-f7be-4170-b40b-fe92062070b8ss"
   }
 };
 
