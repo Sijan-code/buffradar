@@ -2,8 +2,26 @@ import Link from 'next/link';
 import TvRemoteController from '../components/TvRemoteController';
 import { worldCupMatches as matches } from '../data/matchesData';
 
+async function getLiveMatches() {
+  const res = await fetch('https://api.football-data.org/v4/matches', {
+    headers: {
+      'X-Auth-Token': 'cff459619afb4db8afa4d337a6f8d665'
+    },
+    next: { revalidate: 60 } // প্রতি ৬০ সেকেন্ড পর পর স্কোর ও ম্যাচ অটো আপডেট হবে
+  });
 
-export default function Home() {
+  if (!res.ok) {
+    throw new Error('Failed to fetch match data');
+  }
+
+  return res.json();
+}
+
+
+
+export default async function Home() {
+  const data = await getLiveMatches()
+  const matches = data.matches;
   return (
     <main className="min-h-screen bg-slate-950 text-white p-4 md:p-12">
       <TvRemoteController />
