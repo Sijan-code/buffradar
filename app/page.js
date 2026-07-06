@@ -42,18 +42,18 @@ export default async function Home() {
         {matches.map((match) => (
           <Link 
             key={match.id} 
-            href={`/worldcup/${match.slug}`}
+            href={`/worldcup/${match.id}`}
             className="block bg-slate-900 border border-slate-800 rounded-2xl p-6 transition-all duration-200
                        focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:border-yellow-400 focus:scale-[1.03] hover:scale-[1.03]"
           >
             <div className="flex justify-between items-center text-xs font-bold text-teal-400 uppercase tracking-wider mb-2">
-              <span>{match.group}</span>
+              <span>{match.competition?.name || "FIFA WorldCup"}</span>
               <span className="bg-slate-800 px-2 py-0.5 rounded text-[10px]">WEB & TV</span>
             </div>
             <div className="flex items-center justify-center gap-4 my-4 text-2xl font-black">
-              <span>{match.flag1}</span>
+              <span>{match.homeTeam.name || "homeTeam"}</span>
               <span className="text-center text-xl md:text-2xl">{match.title}</span>
-              <span>{match.flag2}</span>
+              <span>{match.awayTeam.name || "AwayTeam"}</span>
             </div>
             <p className="text-center text-slate-500 text-xs font-medium">Click / Select to open Stream Guide →</p>
           </Link>
