@@ -5,7 +5,7 @@ import { worldCupMatches as matches } from '../data/matchesData';
 async function getLiveMatches() {
   const res = await fetch('https://api.football-data.org/v4/matches', {
     headers: {
-      'X-Auth-Token': 'cff459619afb4db8afa4d337a6f8d665'
+      'X-Auth-Token': '8c50e27db931448b948719f9f6e695b2'
     },
     next: { revalidate: 60 } // প্রতি ৬০ সেকেন্ড পর পর স্কোর ও ম্যাচ অটো আপডেট হবে
   });
