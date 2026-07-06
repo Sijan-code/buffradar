@@ -7,7 +7,7 @@ import TvRemoteController from '../../../components/TvRemoteController';
 async function getSingleMatch(matchId) {
   const res = await fetch(`https://api.football-data.org/v4/matches{$matchId}`, {
     headers: {
-      'X-Auth-Token': 'cff459619afb4db8afa4d337a6f8d665'
+      'X-Auth-Token': '8c50e27db931448b948719f9f6e695b2'
     },
     next: { revalidate: 30 } // প্রতি ৩০ সেকেন্ড পর পর ভেতরের স্কোর ও মিনিট অটো আপডেট হবে
   });
