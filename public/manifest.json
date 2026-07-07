@@ -1,0 +1,21 @@
+{
+  "name": "BuffRadar v2 Live Score",
+  "short_name": "BuffRadar",
+  "description": "Live Football Score & Premium HD Stream Center",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#facc15",
+  "icons": [
+    {
+      "src": "https://buffradar.com",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://buffradar.com",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
