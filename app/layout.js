@@ -3,9 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "BuffRadar - Free Live Sports & Movie Stream",
   description: "Find where to watch live world cup and matches online free",
-  other:{
-    "impact-site-verification": "6e9bd102-f7be-4170-b40b-fe92062070b8ss"
-  }
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({ children }) {
