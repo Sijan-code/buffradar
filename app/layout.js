@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script"
 
 export const metadata = {
   title: "BuffRadar - Free Live Sports & Movie Stream",
@@ -10,6 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-slate-950 font-sans antialiased text-white">
+    <Script 
+  src="https://quge5.com/88/tag.main.js"
+  data-zone="258862"
+  strategy="lazyOnload"
+  />
         {/* ব্র্যান্ড নেভিগেশন বার */}
         <nav className="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-50 px-6 py-4">
           <div className="max-w-5xl mx-auto flex justify-between items-center">
