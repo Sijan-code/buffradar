@@ -11,11 +11,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-slate-950 font-sans antialiased text-white">
-    <Script 
-  src="https://quge5.com/88/tag.main.js"
-  data-zone="258862"
+    <Script
+  id="monetag-multitag"
   strategy="lazyOnload"
-  />
+  dangerouslySetInnerHTML={{
+    _html:`
+    (function(s,u,z,p,v,e,d){s[p]=s[p]||function(){(s[p].q=s[p].q||[]).push(arguments)},e=u.createElement(z),d=u.getElementsByTagName(z);e.async=1;e.src=v;e.referrerPolicy='no-referrer-when-downgrade';d.parentNode.insertBefore(e,d)})(window,document,'script','_syan', 'https://quge5.com/88/tag.min.js')
+    `,
+  }}
+/>
         {/* ব্র্যান্ড নেভিগেশন বার */}
         <nav className="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-50 px-6 py-4">
           <div className="max-w-5xl mx-auto flex justify-between items-center">
